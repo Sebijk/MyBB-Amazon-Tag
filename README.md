@@ -1,0 +1,1 @@
+# MyBB-Amazon-Tag

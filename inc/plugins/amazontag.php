@@ -126,6 +126,7 @@ function amazontag_parse($text)
 
 	$amazonid = $mybb->settings['amazontag_id'];
 	$bildformat = $mybb->settings['amazontag_bf'];
+	$text = filter_var($text, FILTER_SANITIZE_STRING);
 
 	$az_pic = "http://images-eu.amazon.com/images/P/" . $text . ".03." . $bildformat . ".jpg";
 	$az_page = "http://www.amazon.de/exec/obidos/ASIN/" . $text . "/". $amazonid;
